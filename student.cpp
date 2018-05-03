@@ -1,6 +1,11 @@
 #include "student.h"
 #include<iostream>
 
+student::student()
+{
+  score = 0;
+}
+
 void student::setName(string fname, string lname)
 {
   first = fname;
@@ -34,7 +39,7 @@ double student::getScore()
     }
 
     temp /= grades.size();
-
+cout << temp << endl;
     return temp;
   }
   else
