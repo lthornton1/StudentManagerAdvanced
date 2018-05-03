@@ -11,7 +11,7 @@ class student
   private:
     string first;
     string last;
-    double score = 0;
+    double score;
     vector<double> grades;
 
   public:
@@ -19,6 +19,7 @@ class student
     double getScore();
     void setName(string,string);
     string fullName();
+    student();
 
 };
 
